@@ -1,36 +1,25 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
-.top {
-    background-color: black;
-    color: white;
-}
-.first {
-    display: inline-block;
-    width: 50vw;
-    float: left;
-    background-color: cornflowerblue;
-    height: 100vh;
-    transition: width 1s;
-    margin: none;
-}
-.second {
-    display: inline-block;
-    width: 50vw;
-    float: right;
-    background-color: bisque;
-    height: 100vh;
-    transition: width 1s;
-    margin: none;
+
+.navbar-menu {
+    list-style: none;
+    align-items: center;
+    display: flex;
 }
 
-.first:hover {
-    width: 80vw;
-}
-.second:hover {
-    width: 80vw;
+.navbar_item {
+    height: 80px;
 }
 
-.first:hover + .second { width: 20vw; }
-.second:hover + .first { width: 20vw; }
+.navbar__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    width: 125px;
+    height: 100%;
+    transition: all 0.3s;
+}
