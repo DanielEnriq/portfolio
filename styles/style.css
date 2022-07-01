@@ -2,6 +2,43 @@ html,
 body {
     height: 100%;
     margin: 0;
+    background-color: rgb(250, 251, 208);
+}
+.navbar {
+    background: #abb192;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-bottom: 20px;
+}
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    
+}
+.home-button {
+    color: rgb(255, 255, 255);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all 0.3s;
+}
+
+.home-button:hover {
+    color: rgb(233, 234, 173);
 }
 
 .navbar-menu {
@@ -15,6 +52,7 @@ body {
 }
 
 .navbar__link {
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -22,4 +60,10 @@ body {
     width: 125px;
     height: 100%;
     transition: all 0.3s;
+}
+
+.navbar__link:hover {
+    color: #abb192;
+    background-color: rgb(233, 234, 173);
+    border-radius: 10px;
 }
