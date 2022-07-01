@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.top {
+    background-color: black;
+    color: white;
+}
+.first {
+    display: inline-block;
+    width: 50vw;
+    float: left;
+    background-color: cornflowerblue;
+    height: 100vh;
+    transition: width 1s;
+    margin: none;
+}
+.second {
+    display: inline-block;
+    width: 50vw;
+    float: right;
+    background-color: bisque;
+    height: 100vh;
+    transition: width 1s;
+    margin: none;
+}
+
+.first:hover {
+    width: 80vw;
+}
+.second:hover {
+    width: 80vw;
+}
+
+.first:hover + .second { width: 20vw; }
+.second:hover + .first { width: 20vw; }
